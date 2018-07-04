@@ -1,0 +1,1277 @@
+
+<!-- Set the doctype to HTML5-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Acord Solutions</title>
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+	<link href="//code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" rel="stylesheet">
+	<link href="animate.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<style>
+
+
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding below the footer and lighter body text */
+
+    body {
+		padding-bottom: 10px;
+		line-height: 1.625em;
+		color: #21282d;
+		font-size: 17px;
+		font-family: 'myriad-pro','Myriad',Helvetica,Arial,sans-serif;
+		text-shadow: 0 1px 0 #fff;
+    }
+	
+	.lead {
+		text-align: justify;
+	}
+				
+	/* --------------------Text Colours------------------. */
+	.global_color {
+	  color:#00455B;
+	}
+	.local_color {
+	  color:#007698;
+	}
+	.instant_color {
+	  color:#00AEF5;  
+	}
+
+	.animated.infinite {
+		-webkit-animation-iteration-count: infinite;
+		-moz-animation-iteration-count: infinite;
+		-o-animation-iteration-count: infinite;
+		animation-iteration-count: infinite;
+		-webkit-animation-duration: 2s;
+		-moz-animation-duration: 2s;
+		-o-animation-duration: 2s;
+		animation-duration: 2s;
+	}
+
+    /* CUSTOMIZE THE NAVBAR IN THE FOOTER
+    -------------------------------------------------- */
+
+    /* Remove border and change up box shadow for more contrast */
+	.navbar-holder {
+		position: fixed;
+		z-index: 20;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+    .navbar .navbar-inner {
+      border: 0;
+      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
+              box-shadow: 0 2px 10px rgba(0,0,0,.25);
+    }
+
+    .navbar .pull-right {
+    	padding:5px 20px 0px 40px !important;
+    }
+	
+	
+	/*------------------------TOP CAROUSEL STYLE------------------------*/
+    
+	
+	/* Carousel base class */
+    .carousel {
+    	margin-bottom: 0px;	
+    }
+	
+	.carousel .item {
+	  height: 600px;
+	}
+	
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel-control {
+      height: 80px;
+      margin-top: 0;
+      font-size: 120px;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+      background-color: transparent;
+      border: 0;
+      z-index: 10;
+    }
+
+    .carousel .item > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+	
+ 	  .carousel .item .span2.offset2 {
+        margin-left: 235px;
+	  }
+
+    .carousel-inner .text {
+    	text-align: Left;
+		margin-top: 25px;
+		font-size: 25px;
+		line-height: 1.25;
+		color: #fff;
+		text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+	
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 800px;
+      padding: 0 20px;
+      margin-top: 200px;
+	  text-align: Center;
+    }
+    .carousel-caption .h1,
+    .carousel-caption .lead {
+      margin: 0;
+      line-height: 1.25;
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+	
+		
+	.carousel-caption.slide{
+		margin-top: 201px;
+		text-align: center;
+	}
+			
+	/* --- code that changes Carousel transition to fade rather than slide---*/
+	.carousel .item {
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+	}
+	#myCarousel .active.left, .carousel .active.right {
+    left:0;
+    opacity:0;
+    z-index:2;
+	}
+	#myCarousel .next, .carousel .prev {
+    left:0;
+    opacity:1;
+    z-index:1;
+	}
+
+	
+	
+	
+	/*---------------------------SECOND CAROUSEL STYLE-------------------*/
+		
+	#myCarousel2 .carousel-caption h1,
+    #myCarousel2 .carousel-caption .lead {
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+	.carousel-caption .lead1 {	
+  	  margin: 0;
+	  line-height: 1.25;
+	  color: #fff;
+	}
+	.carousel-caption h1 {
+    	font-size:60px;    	
+    }
+    .carousel-caption .lead {
+    	font-size:25px;
+    }
+
+	.carousel-caption .lead1 {
+    	font-size:30px;
+    }	
+    #myCarousel2 .carousel-caption .lead1 {	
+  	  margin: 0;
+	  font-size:20px;
+	  line-height: 1.25;
+	  color: #fff;
+	}
+	
+	.carousel-caption .btn {
+      margin-top: 10px;
+    }
+
+  section {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    background:#fff;
+  }
+  ul li {
+    list-style: none;
+  }
+  .item-preview img {
+    display: block;
+    width: 70%;
+    margin: auto;
+  }
+
+    /* --------------------------- MARKETING STYLE---------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    
+	.marketing .container {
+		padding-bottom: 80px;
+	}
+
+	.marketing {
+      background-color: #fff;
+    }
+	. marketing .lead {
+		text-align:justify;
+	}
+		
+    .marketing .span4 {
+      text-align: center;
+    }
+	
+	.marketing .muted {
+	  color : #007698
+	}
+
+    .marketing .span3 h2{
+      margin-left: 0px;
+	  font-weight: 200;
+	}  
+    .marketing h2{
+      margin-left: 10px;
+	  font-weight: normal;
+	  text-align: center;
+	}  
+	.marketing .span4 p {
+      margin-left: 10px;
+      margin-right: 10px;
+	  font-weight: 200;
+	  font-size: 1rem;
+	  margin-bottom: 13px;
+    }
+    #casestudy .normal {	
+  	  margin: 0;
+	  color:#00AEF5; 
+	}
+		
+	#casestudy .header1 {	
+  	  margin: 0;
+	  font-size:30px;
+	  line-height: 1.25;
+	  text-align:center
+	}
+	#casestudy .header2 {	
+  	  margin: 0;
+	  font-size:20px;
+	  line-height: 1.50;
+	  text-align:center;
+	}
+	#casestudy .header3 {	
+  	  margin: 0;
+	  font-size:17px;
+	  line-height: 1.50;
+	}	
+	.featurette-divider {
+      margin: 80px 0;
+    }
+
+    /* ------------------------------Featurette Style ----------------- */
+
+    .featurette {
+      padding: 60px 0px 80px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+      background-color: #fff;
+    }
+    .featurette-image {
+      margin-top: 5px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 25px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+    .text {
+      padding:0px 20px;
+  	  margin-bottom: 25px;
+	   }
+	   
+	.muted {
+	  color : #007698;
+	  text-align: center;
+	}
+
+    .white-box {
+      background-color:#ffffff;
+      padding:12px 20px;
+      border-radius: 10px;
+      margin-bottom: 18px;
+      box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.2) inset, 3px 3px 10px 2px rgba(0,0,0,0.2);
+      background-image: linear-gradient(to bottom,#fff,#f5f5f5);
+      background-image: -moz-linear-gradient(top,#fff,#f5f5f5);
+      background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#f5f5f5));
+      background-image: -webkit-linear-gradient(top,#fff,#f5f5f5);
+      background-image: -o-linear-gradient(top,#fff,#f5f5f5);
+      background-image: linear-gradient(to bottom,#fff,#f5f5f5);
+    }
+
+	.navbar-fixed-top {
+		margin:0px !important;
+		padding:0px !important;
+	}
+
+	.shadow {
+		position: relative;
+	}
+
+	.shadow:before
+	{
+		content: "";
+		position: absolute;
+		z-index: 1;
+		-webkit-box-shadow: 0px -17px 25px rgba(0,0,0,0.2);
+		-moz-box-shadow: 0px -17px 25px rgba(0,0,0,0.2);
+		box-shadow: 0px -17px 25px rgba(0,0,0,0.2);
+		bottom: -40px;
+		left: -20px;
+		right: -20px;
+		height: 70px;
+	  border-top: 1px solid #ababab;
+	}
+	.shadow.left:before
+	{
+		-webkit-transform: rotate(-2deg);
+		-moz-transform: rotate(-2deg);
+		-o-transform: rotate(-2deg);
+		-ms-transform: rotate(-2deg);
+		transform: rotate(-2deg);
+	  bottom:-45px;
+	}
+	.shadow.right:before
+	{
+		-webkit-transform: rotate(2deg);
+		-moz-transform: rotate(2deg);
+		-o-transform: rotate(2deg);
+		-ms-transform: rotate(2deg);
+		transform: rotate(2deg);
+	}
+	.footer {
+		bottom: 0;
+		position: relative;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+		margin-bottom: 0;
+		background-color: #f8f8f8;
+		height: 40px;
+	}
+	.footer_inner {
+		bottom: 0;
+		position: relative;
+		right: 0;
+		left: 0;
+		margin-bottom: 0;
+		background-color: #f8f8f8;
+		height: 40px;
+	}
+	.footer_shadow {
+		height: 40px;
+		margin: 0 auto;
+		z-index: 0;
+		top: 40px;
+	}
+	#footer_nav {
+		position: relative;
+		display: block; 
+		float: none;
+		z-index: 1030;
+		margin: 0 auto; 
+		width: 365px; 
+	}
+		
+	.effect7
+	{
+		position:relative;
+	}
+	.effect7:before
+	{
+		content:"";
+		position:absolute;
+		z-index:-1;
+		-webkit-box-shadow:0 0 20px rgba(0,0,0,0.3);
+		-moz-box-shadow:0 0 20px rgba(0,0,0,0.3);
+		box-shadow:0 0 20px rgba(0,0,0,0.3);
+		top:0;
+		bottom:0;
+		left:10px;
+		right:10px;
+		-moz-border-radius:100px / 10px;
+		border-radius:100px / 10px;
+	}
+	
+	
+
+	#myCarousel2.carousel .item {
+	  height: 400px;
+	}
+
+	#dumpy_logo {
+	  position: absolute;
+	  top: 150px;
+	  left: 50%;
+	  margin-left: -87px;
+	}
+	
+	/* -----------------------------Video Container style---------------------- */
+	.video_thumbnail {
+	  width:215px;
+	  height:155px;
+	  background-size:cover;
+	  margin:0 auto;
+	  border-radius: 8px;
+	}
+	.video_thumbnail i {
+	  margin-left: 5px;
+	  line-height:155px;
+	  font-size:35px;
+	  transition: text-shadow 0.2s;
+	  -webkit-transition: text-shadow 0.2s;
+	  color:#FFF;
+	}
+	.video_thumbnail:hover i {
+	  color:#FF0000;
+	  text-shadow: 0px 0px 10px #eee;
+	}
+
+	.imageClip{
+		position: relative;
+		left: 50%;
+		margin: 20px 0px 20px -450px;
+		text-align: center;
+		display: inline-block;
+	}
+	.teamdata {
+		font-size: 17px;
+		text-align: left;
+		margin: auto;
+		display: inline-block;
+	}
+	/*--------------------------------Msgbox modal style---------------------------*/
+	
+	#msgbox {
+	font-size: 15px;
+	width: 600px;
+	border: 5px solid #007698;;
+	}
+	
+	#msgbox .modal-body {
+	background-color: #FAFAD2;
+	text-align:center
+	}
+	
+	#msgbox .modal-header {
+	background-color: #FFF;
+	}
+	
+	#msgbox2 {
+	font-size: 15px;
+	width: 600px;
+	border: 5px solid #00AEF5;
+	}
+	
+	#msgbox2 .modal-body {
+	background-color: #FAFAD2;
+	text-align: center
+	}
+	
+	#msgbox2 .modal-header {
+	background-color: #FFF;
+	}
+	
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+	
+	/* -----------------mediaquery 1209px---------------*/
+	
+	@media (max-width: 1209px) {
+	
+	/* -----------------mediaquery 979px---------------*/
+ 		.imageClip {
+			margin-left: -360px;
+		}
+	
+	
+    @media (max-width: 979px) {
+	.navbar {
+	display: none;
+	}
+
+ 	.marketing .span4 p {
+	  font-size: 12px;
+      margin-left: 10px;
+      margin-right: 10px;
+	  font-weight: 200;
+	  margin-bottom: 13px;
+	}
+	
+	.h1 {
+		font-size: 
+	}
+	.lead {
+		font-size: 20px;
+		text-align: justify;
+	}
+	
+	
+	.carousel-inner .text {
+		font-size:18px;
+	}
+	.carousel-caption {
+	   margin-top:130px
+	}
+	
+	
+	.carousel-caption.slide {
+	   margin-top:125px
+	}
+	
+	
+	.container.navbar-wrapper {
+        margin-bottom: 0;
+        width: auto;
+      }
+      .navbar-inner {
+        border-radius: 0;
+      }
+
+      .carousel .item {
+        height: 400px;
+      }
+      
+      #myCarousel2.carousel .item {
+        height: 400px;
+      }
+
+      .carousel .item > img {
+        height: auto;
+	}
+
+
+
+      .featurette {
+        height: auto;
+        padding: 0;
+        padding-bottom: 40px;
+      }
+     
+	 .featurette-image.pull-left,
+      .featurette-image.pull-right {
+        display: block;
+        float: none;
+        max-width: 70%;
+        margin: 0 auto 20px;
+      }
+	 
+	
+	.featurette-heading {
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+    .text {
+      padding:0px 20px;
+  	  margin-bottom: 25px;
+	   }
+
+		
+ 		.imageClip {
+			margin-left: -279px;
+		}
+
+		.ul {
+			margin: 0,0,0,0;
+		}
+	
+		.teamdata {
+			font-size: 13px;
+		}
+		
+		#footer_nav {
+		position: relative;
+		display: block; 
+		float: none;
+		z-index: 1030;
+		margin: 0 auto; 
+		width: 320px; 
+	}
+	
+	/*---------------------media query 767px-----------------------*/
+
+    @media (max-width: 767px) {
+
+	h2 {
+	font-size: 25px 
+	}
+	
+	.lead {
+	font-size: 16px 
+	}
+	
+	.text {
+	font-size: 15px;
+	text-align: center
+	}
+		
+    #dumpy_logo {
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      margin-left: -87px;
+    }
+
+    .carousel-inner img {
+		height: 75px;
+		width: 75px;
+     }
+	 
+      .carousel .item {
+        height: 370px;
+         } 
+	  .carousel-caption {
+        width: 100%;
+        padding: 0px;
+        margin-top: 50px;
+		text-align: center;
+      }
+	  
+	 .carousel-inner .text {
+		text-align: center ;
+	}
+
+	  
+	.carousel-caption.slide {
+		margin-top: 0px
+	}
+      .carousel-caption h1 {
+        font-size: 30px;
+		color: #000000
+      }
+      
+	 .carousel-caption lead {
+	  color: #000000;
+	  }
+	  
+	  .carousel-caption .btn {
+        font-size: 18px;
+	  }
+	
+      .marketing .span4 + .span4 {
+        margin-top: 40px;
+      }
+	
+      .featurette-heading {
+        font-size: 25px;
+      }
+      .featurette .lead {
+        font-size: 16px;
+        line-height: 1.5;
+		text-align: justify
+      }
+      .featurette .text {
+        width:300px;
+		margin:0px auto;
+        padding: 0px;
+	   	  }
+		
+		.imageClip {
+			margin-left: -65px;
+		}
+		
+		#msgbox {
+		font-size: 15px;
+		width: 435px;
+		border: 3px solid #007698;
+		}
+		
+		
+		#msgbox2 {
+		font-size: 15px;
+		width: 435px;
+		border: 3px solid #007698;
+		}
+		
+    	.brand {
+			padding: 5px 0px 0px 10px !important;
+    	}
+    	body {
+    		padding: 0px;
+    	}
+		/*---------------------media query 309px-----------------------*/
+		#msgbox {
+		font-size: 12px;
+		width: 295px;
+		border: 3px solid #007698;
+		}
+		
+		
+		#msgbox2 {
+		font-size: 15px;
+		width: 295px;
+		border: 3px solid #007698;
+		}
+		
+		
+    } } }
+	</style>
+</head>
+<body data-spy="scroll" data-target=".navbar">
+  <div id="big_containers" style="opacity:0; transition:1.5s all ease-in-out; overflow:hidden;">
+  	<div class="navbar-holder">
+	  	<div class="navbar container">
+			<div class="navbar-inner">
+				<ul class="nav" data-spy="affix" data-offset-top="200">
+					<li class="active"><a href="#top">Our Service</a></li>
+					<li><a href="#benefits">Benefits</a></li>
+					<li><a href="#how">How</a></li>
+					<li><a href="#acords">Acords</a></li>
+					<li><a href="#videos">Videos</a></li>
+					<li><a class target = "_tab" href="Web Site Files/Acord-Whitepaper.pdf">Read the Details</a></li>
+					<li><a href="#casestudies">Case Studies</a></li>
+					<li><a href="#team">Team</a></li>
+				</ul>
+				<a href="#" style="" class="pull-right"><img src="img/web_header.png" class="pulse animated infinite"></a>
+			</div>
+	  	</div>
+	</div>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        
+		<div class="item active">
+			<img src="img/slide-01.png" alt="">
+				<div class="container">
+					<div class ="row">
+						<div class="span2 offset3">
+							<div class="carousel-caption">
+								<img class="white-box" src="img/Acorditlogo.png"/>
+							</div>
+						</div>		
+						<div class="span6">
+							<div class="carousel-caption slide">
+								<p class = "text featurette-heading">Improve decision making</p><br>
+								<p class = "text featurette-heading">While saving</p><br>
+								<p class = "text featurette-heading">Time and money</p>
+							</div>
+						</div>		
+					</div>		
+				</div>
+		</div>
+			
+		<div class="item">
+          <img src="img/slide-02.png" alt="">
+			<div class="container">
+				<div class ="row">
+  						<div class="span2 offset3">
+							<div class="carousel-caption">
+								<img class="white-box" src="img/Acorditlogo.png"> 
+							</div>
+						</div>		
+						<div class="span6">
+							<div class="carousel-caption slide">
+								<p class = "text featurette-heading">A complete service with</p><br>
+								<p class = "text featurette-heading">Trained personnel to assist</p><br>
+								<p class = "text featurette-heading">All data totally secure</p>
+							</div>
+						</div>		
+				</div>
+			</div>
+		 </div>
+
+        <div class="item">
+          <img src="img/slide-03.png" alt="">
+            <div class="container">
+				<div class ="row">
+  					<div class="span2 offset3">
+						<div class="carousel-caption">
+							<img class="white-box" src="img/Acorditlogo.png"/>
+						</div>
+					</div>		
+					<div class="span6">
+						<div class="carousel-caption slide">
+							<p class = "text featurette-heading">Cutting edge cloud software providing</p><br>
+							<p class = "text featurette-heading">A consensus assistance portal for</p><br>
+							<p class = "text featurette-heading">Any body, any platform, anywhere</p>
+						</div>
+					</div>		
+				</div>
+			</div>
+		 </div>
+		  
+    <!--<div class="item">
+          <img src="img/slide-01.png" alt="">
+          <div class="container">
+            <div class ="row">
+  					<div class="span4 offset2">
+							<div class="carousel-caption">
+								<br><br>	
+								<img class="white-box" src="img/Acordmainlogo.png" height="150" width="150" />
+								<p class = "lead">Acord it</p>
+								<p class = "lead">Make better decisions!</p>
+							
+							</div>
+						</div>		
+						<div class="span4">
+							<div class="carousel-caption">
+								<br><br><br>
+								<p class = "text">Because of that not so good decisions disappeared and better decisions were made.</p><br>
+								<p class = "text">Until finally the world was full of better decisions made quickly and efficiently!!</p>
+								
+						</div>
+					</div>		
+				</div>
+        </div>
+      </div>-->
+	 </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+	
+	 <!-- Three columns of text below the carousel -->
+    <div class="featurette shadow right" id="top">
+	    <div class="container">
+			<a NAME="MAIN"></a>
+	        <img class="featurette-image pull-right" data-animate="fadeInDown" src="img/computer_tablet_phone.png" width = "500px">
+	        <div class="text clearfix">
+	        	<h2 class = local_color>Acord</h2>
+	        	<p class="lead">Our solutions are simple structured communication techniques that allow participants to find consensus and decision alignment based on the Delphi principle that structured decisions of a group are more valid than those of an individual.</br>
+				</p>
+	    	</div>
+	    </div>
+     </div>
+
+    <div class="featurette shadow left marketing" id="benefits">
+		<div class="container">
+			<div class="row">
+				<h2 class="featurette-heading" data-animate="fadeInLeft"><span class="muted">The Benefits For You...</span></h2>
+				<div class="span4">
+					<hr />
+					<h2 class="featurette-heading">Find Consensus</h2>
+					<hr />
+					<p>
+					Using our services will improve your ability to achieve outcomes based on consensus. Our Facilitators will help you focus on the issues you need to deal with and how to arrive at a consensus on them in the most efficient way possible.  
+					</p>
+				</div>
+				<div class="span4">
+						<hr />
+						<h2 class="featurette-heading"> By Involving Your Colleagues</h2>
+						<hr />
+						<p>
+						Because our system provides for anonymous participation, group interaction is improved and better ideas are brought out. Acord can shorten meetings by establishing agreement before meetings begin. This allows a group to concentrate on what needs to be discussed.
+						</p>
+				</div>
+				<div class="span4">
+				<hr />
+					  <h2 class="featurette-heading">To Get The Best Outcome</h2>
+				<hr />
+						<p>When more people are involved in arriving at a consensus Managers get a better grasp on how and why a consensus is arrived at. Our service allows for any decision arising from a consensus outcome to be tested before implementation.</p>
+				</div>
+			</div><!-- /.row -->
+		</div>
+	</div>
+
+    <div class="featurette shadow right marketing" id="how">
+		<div class="container">
+			<div class="row">
+				<h2 class="featurette-heading" data-animate="fadeInRight" data-animate-offset="600"><span class="muted">How We Do It...</span></h2>
+				<div class="span4">
+					<hr />
+					<h2 class="featurette-heading">The Delphi Process</h2>
+					<hr />
+					<p>
+					The Delphi process was invented in the 1950s. Our service provides computer assisted moderation of group ideas and consensus building. Participants have individual anonymity but group accountability.  
+					</p>
+				</div>
+				<div class="span4">
+						<hr />
+						<h2 class="featurette-heading">On Any Device</h2>
+						<hr />
+						<p>
+						No special software is required! Our service works with all web browsers on any platform. Either through the internet or for ultimate security on our own server that we bring to a meeting. Using our service is very simple because there is no need to configure any hardware.
+						</p>
+				</div>
+				<div class="span4">
+				<hr />
+					  <h2 class="featurette-heading">With Evidence</h2>
+				<hr />
+						<p>We provide the record of all Acord outcomes. By providing tangible evidence of the results, our service makes your consensus building and decision alignment process more effective and as a result cheaper.  </p>
+				</div>
+			</div><!-- /.row -->
+		</div>
+	</div>
+
+	<div class="featurette shadow left" id="acords">
+	    <div class="container">
+	        <img class="featurette-image pull-left" data-animate="fadeInUp" src="img/globallaptop.png" width = "400px">
+	        <div class="text clearfix">
+				<h2 class="featurette-heading"><span class="global_color">Global</span>.<span class="muted">Acord</span></h2>
+	        	<p class="lead">Used when group members are not in the same room to establish group consensus from anywhere around the world. Discover the issues that are already agreed upon by the group before a meeting begins. Through the use of an electronic conference portal anything can be discussed and decided upon without the time and cost of travelling to a particular location.</p>
+					<p><a class="btn video_button" data-youtube="kNb7ZkOoCG4">Watch the video</a></p>
+	    	</div>
+	    </div>
+    </div>
+	  
+    <div class="featurette shadow right">
+	    <div class="container">
+	        <img class="featurette-image pull-right" data-animate="fadeInRight" src="img/localipad.png" width= "400px">
+	        <div class="text clearfix">
+				<h2 class="featurette-heading"><span class="local_color">Local</span>.<span class="muted">Acord</span></h2>
+		        <p class="lead"> Used when group members are in the same room. Local.Acord uses the Delphi Process to achieve group consensus in the most efficient manner. It eliminates the pitfalls of face to face dynamics in meetings and provides validation of group decisions.</p>
+				<p><a class="btn video_button" data-youtube="Be5h5uUlJ1s">Watch the video</a></p>
+		    </div>
+	    </div>
+    </div>
+
+    <div class="featurette shadow left">
+	    <div class="container">
+	        <img class="featurette-image pull-left" data-animate="fadeInDown" src="img/instantiphone.png" width= "200px">
+	        <div class="text clearfix">
+				<h2 class="featurette-heading"><span class="instant_color">Instant</span>.<span class="muted">Acord</span></h2>
+		        <p class="lead">Immediate audience interaction. With Instant.Acord you can get a response from your audience in real time with the delivery of your product or service. You can also use this method to test decisions arrived at by consensus before their implementation.</p>
+				<p><a class="btn video_button" data-youtube="43RKpF_ALQk">Watch the video</a></p>
+		    </div>
+	    </div>
+    </div>
+      </section>
+	 
+    <div class="featurette shadow right marketing" id="videos">
+      <div class="container videos">	
+        <div class="row">
+          <div class="span4">
+            <hr />
+			       <h2 class="featurette-lead"><span class="global_color">Global </span><span class="muted">Acord</span></h2>
+			<hr />
+			  <p>See how it works!</p>
+				<div class="video_thumbnail" style="background-image:url(//img.youtube.com/vi/kNb7ZkOoCG4/0.jpg);" data-youtube="kNb7ZkOoCG4">
+					<i class="icon-play-circle"></i>
+				</div>
+      </div>
+      <div class="span4">
+        <hr />
+        <h2 class="featurette-lead"><span class="local_color">Local </span><span class="muted">Acord</span></h2>
+        <hr />
+        <p>A short film about a Local Acord</p>
+        <div class="video_thumbnail" style="background-image:url(//img.youtube.com/vi/Be5h5uUlJ1s/0.jpg);" data-youtube="Be5h5uUlJ1s">
+          <i class="icon-play-circle"></i>
+        </div>
+      </div>
+      <div class="span4">
+        <hr />
+        <h2 class="featurette-lead"><span class="instant_color">Instant </span><span class="muted">Acord</span></h2>
+        <hr />
+        <p>Watch an Instant Acord in an instant!.</p>
+        <div class="video_thumbnail" style="background-image:url(//img.youtube.com/vi/43RKpF_ALQk/0.jpg);" data-youtube="43RKpF_ALQk">
+          <i class="icon-play-circle"></i>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    </div>
+     <div class="featurette shadow left marketing" id="paper">
+		<div class="container">
+			<div class="row" style="text-align:center;">
+			<h2 class="featurette-heading" data-animate="fadeInLeft" data-animate-offset="600"><span class="muted">Why our service is unique...</span></h2>
+			<a class="btn btn-info btn-large center" style="margin:20px;" target = "_tab" href="Web Site Files/Acord-Whitepaper.pdf">Click this button to read about it in detail!</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class = "featurette shadow right marketing" id="casestudies">	
+		<div class="container">
+			<h2 class="featurette-heading" data-animate="fadeInLeft" data-animate-offset="600"><span class="muted">Case Studies...</span></h2>
+			
+			<img src="img/eau_logo.gif" width= "400px">
+			
+				<div class="well well-large">
+					<h2>The European Association of Urology </h2>
+						<div class="text clearfix">
+							<p class="lead">The European Association of Urology is a non-profit organisation for medical professionals specialising in urology.<br>In 2014 they pioneered the use of an Acord decision alignment service to formulate new guidelines on the ethics of live surgery and on the assessment of male lower urinary tract symptoms. The button below will take you to a copy of  a recent publication. The text we have coloured blue on page 3 of the publication describes how our services were used.</p>
+						</div>
+						<div class="row" style="text-align:center">	
+							<a class="btn btn-info btn-large center" style="margin:20px;" target = "_tab" href="Web Site Files/EAU-LUTS Assessment.pdf">Click this button to read the EAU publication</a>
+						</div>
+					<p class = "normal"> </p><br>
+				</div>
+<!--	
+				<div class="well well-large">
+					<p class = "header2">Case Study 2</p>
+					<p class = "header3">The Focus Group:</p>
+					<p class = "normal"> </p><br>
+					<p class = "normal"> </p><br>
+				</div>
+				<div class="well well-large">
+					<p class = "header2">Case Study 3</p>
+					<p class = "header3">The Committee:</p>
+					<p class = "normal"> </p><br>
+					<p class = "normal"> </p><br>
+				</div>
+-->	
+		</div>
+	</div>
+	
+	
+	
+
+	  
+	   <!-- Carousel
+    ================================================== 
+    <div id="myCarousel2" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel2" data-slide-to="1"></li>
+        <li data-target="#myCarousel2" data-slide-to="2"></li>
+        <li data-target="#myCarousel2" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <div class="container">
+            <div class="span6 offset3">
+              <div class="carousel-caption">
+                <p class="lead">Step 1: Initial Consultation</p><br>
+                <p class="lead1">We consult with you and help you decide which of our services is best suited to your organisation.</p><br>
+                <a class="btn btn-primary btn-large" data-target="#myCarousel2" data-slide="next">Next</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="span6 offset3">
+              <div class="carousel-caption">
+                <p class="lead">Step 2: Before your Meeting</p><br>
+                <p class="lead1">We run a pre-meeting Global.Acord to establish what your participants already agree upon and do not need to discuss.</p><br>
+                <a class="btn btn-primary btn-large" data-target="#myCarousel2" data-slide="next">Next</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="span6 offset3">
+             <div class="carousel-caption">
+                <p class="lead">Step 3: At your Meeting</p><br>
+                <p class = "lead1">We are with you at the meeting and can run any issue, question or item through our Local.Acord service. Setting this up takes  seconds and allows your team to achieve maximum consensus and group affirmation.</p><br>
+               <a class="btn btn-primary btn-large" data-target="#myCarousel2" data-slide="next">Next</a>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="container">
+            <div class="span6 offset3">
+              <div class="carousel-caption">
+                <p class="lead">Step 4: After your Meeting</p><br>
+                <p class = "lead1">We provide a Data, Outcome and Analytic Report on all the issues, questions and items that were run through our service during the meeting.</p><br>
+				<a class="btn btn-primary btn-large" data-target="#myCarousel2" data-slide="next">Return</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- /.carousel -->
+	  
+	  
+      <section id="team" class ="featurette shadow left marketing" style="background-color:#fff;">
+        <div class="container">
+        
+            <div class="row">
+				<h2 class="featurette-heading" data-animate="fadeInRight" data-animate-offset="600"><span class="muted">Our Frontline...</span></h2>
+			</div>
+        
+            <div class="row">
+				<div class="imageClip">
+					<!-- Member -->
+					<div class="span4">
+						<img src="img/team/krp.jpg" class="img-rounded" alt="Kevin">
+						<h2>Kevin</h2>
+						<ul class="teamdata">
+						<li><i class="icon-group"></i> Consensus Facilitator</li>
+						<li><i class="icon-pencil"></i> <a href="#">kevin@acord.solutions</a></li>
+						</ul>
+					</div>
+				
+					<!-- Member -->
+					<div class="span4 offset1">
+						<img src="img/team/kfp.jpg" class="img-rounded" alt="Keith">
+						<h2>Keith</h2>
+						<ul class="teamdata">
+						<li><i class="icon-group"></i> Consensus Facilitator</li>
+						<li><i class="icon-pencil"></i> <a href="#">keith@acord.solutions</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="row" text align = "center">
+				<h2 class="featurette-heading">and</h2>
+				<img src="img/team/efp.jpg" class="img-rounded" alt="Ed">
+				<h2>Ed</h2>
+				<p class="featurette-text" >at our software designers</p>
+				<h2>ACUTULUS ENTERPRISES LLC</h2>
+				<p>901 Mission St Ste #105 San Francisco, CA 94103</p>
+			</div>
+		</div>
+					
+					
+					<!-- Member -->
+					<!--
+					<div class="span3">
+						
+						<img src="img/team/efp.jpg" class="img-rounded" alt="Ed">
+						
+						<h2>Ed</h2>
+						<ul class="teamdata">
+						<li><i class="icon-group"></i> Head of Technology</li>
+						<li><i class="icon-pencil"></i> <a href="#">ed@acord.solutions</a></li>
+						</ul>
+					</div> -->
+				</div>
+			</div>
+    </section>
+		<div class="footer">
+			<ul id="footer_nav" class="inline">
+				<li><button class = "btn btn-info btn large" data-toggle = "modal" href= "#msgbox"> About Us</li>
+				<li><button class = "btn btn-info btn large" data-toggle = "modal" href= "#msgbox2"> Contact Us</li>
+				<li><a class="btn btn-info" target = "_tab" href="Web Site Files/Cookies.html"> Cookies </a></li>
+			</ul>
+		</div>
+	</div>
+	
+	
+	<div id="msgbox" class="modal container hide fade" tabindex="-1" data-width="760">
+		<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3>About us</h3>
+		</div>
+			<div class="modal-body">
+				<p> Acord is a trading name of Tutte Tech Ltd</p>
+				<p>We are a Company registered in England. Our registered number is 8212544</p>
+				<p>Our registered office is at 3 Churchfield, Harpenden, Hertfordshire. AL5 1LJ </p>
+				<p>We have people in London, Liverpool and San Francisco.</p>
+			</div>
+		  <div class="modal-footer">
+			<button type="button" data-dismiss="modal" class="btn btn-info">Close</button>
+			</div>
+		</div>
+		
+		<div id="msgbox2" class="modal container hide fade" tabindex="-1" data-width="760">
+		<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+		<h3>Contact us</h3>
+		</div>
+			<div class="modal-body">
+				<p>You can get in touch with us by clicking on this link</p>
+				<i class="icon-pencil"></i> <a href="#">mail@acord.solutions</a>
+				
+			</div>
+		  <div class="modal-footer">
+			<button type="button" data-dismiss="modal" class="btn btn-info">Close</button>
+			</div>
+		</div>
+		
+	
+	
+	
+	
+	
+	
+	
+  <div id="myModal" class="modal hide fade" tabindex="-1" role=labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-body" padding-left="20px">
+      <p><iframe id="video_iframe" width="100%" height="315" src="http:com/embed/662KGcqjT5Q" frameborder="0" allowfullscreen></iframe></p>
+		  <div class= "modal-footer">
+		  <button class="btn btn-info" data-dismiss="modal" aria-hidden="true" style="text-align:right">Close</button>
+		  </div>
+    </div>
+  </div>
+  <!-- <img id="dumpy_logo" class="" src="img/Acordmainlogo.png" height="150" width="150"> -->
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.0/js/bootstrap.min.js"></script>
+	<script>
+    // carousel demo
+      setTimeout(function() {
+        $('#big_containers').css('opacity', 1);
+        $('#myCarousel').carousel({interval: 6500});
+      }, 700);
+      //setTimeout(function() {
+      //  $('#dumpy_logo').hide();
+      //}, 4000);
+      // $('#myCarousel2').carousel({interval: false});
+      	$(window).scrollTop(0);
+      	$(document).ready(function(){
+	     $(this).scrollTop(0);
+			$('.video_thumbnail, .video_button').click(function() {
+            $('#video_iframe').attr('src', 'https://www.youtube.com/embed/'+$(this).attr('data-youtube'));
+			$('#myModal').modal();
+			})
+			$('#myModal button.btn').click(function() {
+			 $('#video_iframe').attr('src', '');
+			})
+		});
+
+		$('[data-animate]').each(function(){
+			$(this).addClass('invisible');
+			$(this).attr('data-has-animated', 'false');
+		});
+
+		$(window).scroll(function() {
+			$('[data-animate][data-has-animated!=true]').each(function(){
+				var jqueryThis = $(this);
+				var imagePos = jqueryThis.offset().top;
+				
+				var topOfWindow = $(window).scrollTop();
+				var offset = $(window).height() - 100;
+				//if (jqueryThis.attr('data-animate-offset')) offset = jqueryThis.attr('data-animate-offset');
+				if (imagePos < topOfWindow + offset) {
+					jqueryThis.removeClass('invisible').addClass(jqueryThis.attr('data-animate')).addClass('animated');
+					jqueryThis.attr('data-has-animated', 'true');
+				}
+			});
+		});
+
+
+		$("ul.nav li a[href^='#']").on('click', function(e) {
+
+			// prevent default anchor click behavior
+			e.preventDefault();
+
+			// store hash
+			var hash = this.hash;
+
+			// animate
+			$('html, body').animate({
+				scrollTop: $(this.hash).offset().top
+			}, 2000, function(){
+				// when done, add hash to url
+				// (default click behaviour)
+				window.location.hash = hash;
+			});
+		});
+  </script>
+</body>
+</html>
